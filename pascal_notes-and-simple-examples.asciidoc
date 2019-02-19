@@ -94,9 +94,10 @@ stuff that I find useful. Therefore, there are Delphi related info in here as we
 
 == Useful books and other references
 A lot of the information, notes and examples comes from these resources:
-. Chris Rolliston's books on Delphi XE2
-. Marco Cantu's book on Object Pascal
-. Others...
+
+.Chris Rolliston's books on Delphi XE2
+.Marco Cantu's book on Object Pascal
+.Others...
 
 
 == The basics and minimal examples
@@ -109,15 +110,15 @@ Simply type
 ----
 fpc program.pp
 ----
-The file extension can be .pp or .pas
+The file extension can be +.pp+ or +.pas+.
 
 You can leave out the extension in the command, in which case the above becomes:
 [source, console]
 ----
-fpc program.pp
+fpc program
 ----
 
-See Free Pascal User's guide for further details: https://www.freepascal.org/docs.html
+See Free Pascal User's guide (chapter 3 at the time of writing) for further details: https://www.freepascal.org/docs.html
 
 [[DoNothing]]
 === The bare minimum for a program
@@ -309,7 +310,7 @@ end.
 ----
 
 === An even more elaborate example
-Some text goes here
+Some text goes here
 
 == Settings (configuration)
 
