@@ -15,28 +15,36 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 
-This document was typeset using http://asciidoc.org[AsciiDoc].
+This document iss typeset using http://asciidoc.org[AsciiDoc].
+There are some snippets I may want to use later on this page, nothing to do with Object Pascal.
 
-.Topic Title                                               
-[[yourId]]                                                 
-//[yourstyle]                                                
-____
-Four score and seven years ago our fathers brought forth
-on this continent a new nation...
-
-Now we are engaged in a great civil war, testing whether
-that nation, or any nation so conceived and so dedicated,
-can long endure.
-____
-
-You find more information on this in <<yourId>>.
-
-== The basics
 A paragraph followed by a simple list with square bullets.
 
 [square]
 * item 1
 * item 2
+
+* item 3
+* item 4
+** item 4.1
+** item 4.2
+
+[start=4]
+. Step four
+. Step five
+. Step six
+ 
+ 
+.Topic Title                                               
+[[yourId]]                                                 
+//[yourstyle]                                                
+____
+Example of a quote and using cross-references.
+____
+You refer to the above by referencing <<yourId>>.
+
+== The basics
+
 
 [[DoNothing]]
 === The bare minimum
