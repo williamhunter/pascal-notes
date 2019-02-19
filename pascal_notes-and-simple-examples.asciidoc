@@ -1,4 +1,4 @@
-= Object Pascal: Notes and Simple Examples 
+= Object Pascal: A Collection of Notes and Simple Examples 
 :revnumber: 2019.03
 :revmark: First issue
 :author: William Hunter
@@ -24,17 +24,27 @@ A paragraph followed by a simple list with square bullets.
 [square]
 * item
 * item 
+
 //-
+
+.Another list
 * item 
 * item 
 ** item 
 ** item 
 
-[start=4]
+.Start the below list numbered from 88
+[start=88]
 . Step four
 . Step five
 . Step six
 
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+Keyboard:: Used to enter text or control items on the screen.
+Mouse:: Used to point to and select items on your computer screen.
+Monitor:: Displays information in visual form using text and graphics.
 
 .Another list
 . something
@@ -76,7 +86,23 @@ IMPORTANT: Asciidoctor is awesome, don't forget!
 WARNING: You have no reason not to use Asciidoctor.
 
 
+
+== Introduction
+This document focusses on the use of Free Pascal and therefore the Free Pascal Compiler (FPC) and its spinoffs (notably,
+the Lazarus IDE). The examples and snippets is mostly a collection of various sources from the internet and other sources,
+stuff that I find useful. Therefore, there are Delphi related info in here as well.
+
+== Useful books and other references
+A lot of the information, notes and examples comes from these resources:
+. Chris Rolliston's books on Delphi XE2
+. Marco Cantu's book on Object Pascal
+. Others...
+
+
 == The basics and minimal examples
+=== Installing FPC and Lazarus
+Blah-blah
+
 === How to compile using the command line
 Blah-blah
 
@@ -148,7 +174,9 @@ platforms, you can potentially run into problems on Linux and Mac if you start m
 case, because the latter two are case sensitive (unlike Windows).
 
 ==== Coding style and syntax
-Some text...
+. http://wiki.freepascal.org/Coding_style
+. http://jvcl.delphi-jedi.org/StyleGuide.htm
+. http://edn.embarcadero.com/article/10280
 
 === File types
 As applicable to Free Pascal (FP) and the Lazarus IDE. It is a good idea to use lower
