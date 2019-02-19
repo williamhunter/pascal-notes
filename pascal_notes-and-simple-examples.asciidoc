@@ -103,9 +103,21 @@ A lot of the information, notes and examples comes from these resources:
 === Installing FPC and Lazarus
 Blah-blah
 
-=== How to compile using the command line
-Blah-blah
+=== How to compile a program using the command line
+Simply type
+[source, console]
+----
+fpc program.pp
+----
+The file extension can be .pp or .pas
 
+You can leave out the extension in the command, in which case the above becomes:
+[source, console]
+----
+fpc program.pp
+----
+
+See Free Pascal User's guide for further details: https://www.freepascal.org/docs.html
 
 [[DoNothing]]
 === The bare minimum for a program
