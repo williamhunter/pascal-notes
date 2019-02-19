@@ -93,11 +93,13 @@ the Lazarus IDE). The examples and snippets is mostly a collection of various so
 stuff that I find useful. Therefore, there are Delphi related info in here as well.
 
 == Useful books and other references
-A lot of the information, notes and examples comes from these resources:
+A lot (almost all) of the information, notes and examples in this document are from these resources:
 
-.Chris Rolliston's books on Delphi XE2
-.Marco Cantu's book on Object Pascal
-.Others...
+. The excellent book by Howard Page-Clark
+. Marco Cantu's book on Object Pascal
+. Chris Rolliston's books on Delphi XE2
+. Free Pascal and Lazarus wiki pages
+. delphibasics.co.za
 
 
 == The basics and minimal examples
