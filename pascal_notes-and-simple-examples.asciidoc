@@ -15,6 +15,7 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 
+== NOT PART OF DOC
 This document iss typeset using http://asciidoc.org[AsciiDoc].
 There are some snippets I may want to use later on this page, nothing to do with Object Pascal.
 
@@ -23,7 +24,7 @@ A paragraph followed by a simple list with square bullets.
 [square]
 * item 1
 * item 2
-
+//-
 * item 3
 * item 4
 ** item 4.1
@@ -43,9 +44,35 @@ Example of a quote and using cross-references.
 ____
 You refer to the above by referencing <<yourId>>.
 
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[NOTE]
+====
+A sample note admonition.
+We can use gemoji icons in the Asciidoctor markup.
+We assign an icon name to the document
+attributes `tip-caption`, `note-caption` and `important-caption`.
+====
+
+TIP: It works!
+
+IMPORTANT: Asciidoctor is awesome, don't forget!
+
+CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
+
+WARNING: You have no reason not to use Asciidoctor.
+
+
+
+
+
 == The basics
-
-
 [[DoNothing]]
 === The bare minimum
 You require at least the following, although it will do nothing.
