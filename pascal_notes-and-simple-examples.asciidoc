@@ -60,21 +60,22 @@ We assign an icon name to the document
 attributes `tip-caption`, `note-caption` and `important-caption`.
 ====
 
+CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
+
 TIP: It works!
 
 IMPORTANT: Asciidoctor is awesome, don't forget!
 
-CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
-
 WARNING: You have no reason not to use Asciidoctor.
 
 
+== The basics and minimal examples
+=== How to compile using the command line
+Blah-blah
 
 
-
-== The basics
 [[DoNothing]]
-=== The bare minimum
+=== The bare minimum for a program
 You require at least the following, although it will do nothing.
 
 .A program that will compile, but will do nothing
