@@ -15,26 +15,33 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 
-== NOT PART OF DOC
+== Asciidoc snippets (not part of this document)
 This document iss typeset using http://asciidoc.org[AsciiDoc].
 There are some snippets I may want to use later on this page, nothing to do with Object Pascal.
 
 A paragraph followed by a simple list with square bullets.
 
 [square]
-* item 1
-* item 2
+* item
+* item 
 //-
-* item 3
-* item 4
-** item 4.1
-** item 4.2
+* item 
+* item 
+** item 
+** item 
 
 [start=4]
 . Step four
 . Step five
 . Step six
- 
+
+
+.Another list
+. something
+. something
+.. something
+.. something
+. something
  
 .Topic Title                                               
 [[yourId]]                                                 
