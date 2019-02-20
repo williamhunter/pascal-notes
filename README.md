@@ -2,4 +2,6 @@
 
 These are just my own notes and examples about Object Pascal
 
-This is a work in progress, also learning asciidoc as I go along...
+See the other Asciidoc file
+
+This is a work in progress, I'm also learning Asciidoc as I go along...
