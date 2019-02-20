@@ -236,7 +236,27 @@ The following files are typically not added to your VCS.
 |===
 
 == Programs and units
-Blah-Blah
+A Pascal program can consist of modules called units. A unit can be used to group pieces of code together, or to give someone code
+without giving the sources. Both programs and units consist of code blocks, which are mixtures of statements, procedures, and
+variable or type declarations.
+
+=== What are units?
+A unit contains a set of declarations, procedures and functions that can be used by a program or another unit.
+Below is an example of a minimal unit (filename +a.pas+ or +a.pp+):
+
+[source, pascal]
+----
+unit a;  
+ 
+interface  
+ 
+implementation  
+ 
+end.
+----
+
+=== A program with units
+Add an example...
 
 == Classes and objects
 A class is user-defined type, it describes the behaviour and characteristics of a group of
