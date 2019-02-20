@@ -1,4 +1,4 @@
-# Pascal Notes and Simple Examples
+# Pascal Notes and Examples
 
 These are just my own notes and examples about Object Pascal
 
