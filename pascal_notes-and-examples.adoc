@@ -42,18 +42,15 @@ A paragraph followed by a simple list with square bullets.
 . Step five
 . Step six
 
-CPU:: The brain of the computer.
-Hard drive:: Permanent storage for operating system and/or user files.
-RAM:: Temporarily stores information the CPU uses during operation.
-Keyboard:: Used to enter text or control items on the screen.
-Mouse:: Used to point to and select items on your computer screen.
-Monitor:: Displays information in visual form using text and graphics.
+Hard drive:: Permanent storage for operating system and/or user files
+RAM:: Temporarily stores information the CPU uses during operation
+Monitor:: Displays information in visual form using text and graphics
 
 .Another list
 . something
 . something
 .. something
-.. something
+... something
 . something
  
 .Topic Title                                               
@@ -87,8 +84,6 @@ TIP: It works!
 IMPORTANT: Asciidoctor is awesome, don't forget!
 
 WARNING: You have no reason not to use Asciidoctor.
-
-
 
 == Introduction
 This document focusses on the use of Free Pascal and therefore the Free Pascal Compiler (FPC) and its spinoffs (notably,
@@ -129,38 +124,38 @@ fpc program
 
 For further details, refer to the Free Pascal User's Guide (Chapter 3 at the time of writing): https://www.freepascal.org/docs.html
 
-[[DoNothing]]
-=== The bare minimum for a program
-You require at least the following, although it will do nothing.
+[[lnk-minimal]]
+=== A minimal program
+You require at least the following.
 
 .A program that will compile, but will do nothing
 [source, pascal]
 ----
-program donothing;
+program minimal;
 
 begin
   // this is a comment
-  // filename is donothing.pas or donothing.pp  
+  // filename is minimal.pas or minimal.pp  
 end.
 ----
 
 === Hello, World!
-Some code that does something (see <<DoNothing>>).
+Some code that does something (see <<lnk-minimal>> for the bare minimum that is required for a valid pascal program).
 Here's how you say "`Hello, World!`" in Object Pascal:
 
 .A basic "`Hello, World!`" in Pascal
 [source, pascal, numbered]
 ----
 {
-  helloworld.pas
+  filename: helloworld.pas
 
-  2 spaces to indent
-  comments can also be inside curly brackets
+  comments can also be inside curly brackets, like this block
+  use 2 spaces to indent
 }
 
 program helloworld;
 
-{$mode objfpc}{$H+} // compiler directive for Free Pascal compiler
+{$mode objfpc}{$H+} // compiler directive for Free Pascal Compiler
 
 begin
   writeln('Hello, World!');
@@ -170,6 +165,7 @@ end.
 ----
 
 === Hello, Console!
+Just a variation on the above, and introduces a line break.
 [source, pascal, numbered]
 ----
 program helloconsole;
@@ -240,13 +236,13 @@ A Pascal program can consist of modules called units. A unit can be used to grou
 without giving the sources. Both programs and units consist of code blocks, which are mixtures of statements, procedures, and
 variable or type declarations.
 
-=== What are units?
+=== A minimal unit
 A unit contains a set of declarations, procedures and functions that can be used by a program or another unit.
 Below is an example of a minimal unit (filename +a.pas+ or +a.pp+):
 
 [source, pascal]
 ----
-unit a;  
+unit minimal;  
  
 interface  
  
