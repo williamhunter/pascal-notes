@@ -256,7 +256,81 @@ end.
 ----
 
 === A program with units
-Add an example...
+A program that makes use of two units.
+
+==== aprogram.lpr (the main program)
+[source, pascal]
+----
+program aProgram;
+
+{$mode objfpc}{$H+}
+
+uses
+  aUnit, otherUnit;
+
+begin
+  aUnit.DoSomething; // defined in aUnit.pas
+  DoAnotherThing; // also defined in aUnit.pas
+  otherUnit.DoSomething; // defined in otherUnit.pas
+end.
+----
+
+==== aunit.pas (a unit)
+[source, pascal]
+----
+unit aUnit;
+
+interface
+
+procedure DoSomething;
+procedure DoAnotherThing;
+
+implementation
+
+procedure DoSomething;
+begin
+  writeln('I did something!');
+  readln;
+end;
+
+procedure DoAnotherThing;
+begin
+  writeln('I did another thing!');
+  readln;
+end;
+
+end.    
+----
+
+==== otherunit.pas (the other unit)
+[source, pascal]
+----
+unit otherUnit;
+
+interface
+
+procedure DoSomething;
+
+implementation
+
+procedure DoSomething;
+begin
+  writeln('I did something from another Unit!');
+  readln;
+end;
+
+end.     
+----
+
+If compiled and run, you should get:
+[source, console]
+----
+I did something!
+
+I did another thing!
+
+I did something from another Unit!
+----
 
 == Classes and objects
 A class is user-defined type, it describes the behaviour and characteristics of a group of
