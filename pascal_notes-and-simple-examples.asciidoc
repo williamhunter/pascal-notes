@@ -21,6 +21,7 @@ There are some snippets I may want to use later on this page, nothing to do with
 
 A paragraph followed by a simple list with square bullets.
 
+.A bulleted list (square bullets)
 [square]
 * item
 * item 
@@ -31,7 +32,9 @@ A paragraph followed by a simple list with square bullets.
 * item 
 * item 
 ** item 
-** item 
+** item
+- item
+- item
 
 .Start the below list numbered from 88
 [start=88]
@@ -92,19 +95,23 @@ This document focusses on the use of Free Pascal and therefore the Free Pascal C
 the Lazarus IDE). The examples and snippets is mostly a collection of various sources from the internet and other sources,
 stuff that I find useful. Therefore, there are Delphi related info in here as well.
 
-== Useful books and other references
+== Books and other references
 A lot (almost all) of the information, notes and examples in this document are from these resources:
 
-. The excellent book by Howard Page-Clark
+=== Books
+. The excellent introductory book by Howard Page-Clark
 . Marco Cantu's book on Object Pascal
 . Chris Rolliston's books on Delphi XE2
+
+=== Online resources
+. https://www.freepascal.org/docs-html/current/ref/ref.html[Free Pascal Reference Guide]
 . Free Pascal and Lazarus wiki pages
-. delphibasics.co.za
+. http://www.delphibasics.co.uk[Delphi Basics]
 
 
 == The basics and minimal examples
-=== Installing FPC and Lazarus
-Blah-blah
+=== Installing FPC and Lazarus IDE
+They can be installed independantly, or just install the Lazarus IDE (FPC is included).
 
 === How to compile a program using the command line
 Simply type
@@ -120,7 +127,7 @@ You can leave out the extension in the command, in which case the above becomes:
 fpc program
 ----
 
-See Free Pascal User's guide (chapter 3 at the time of writing) for further details: https://www.freepascal.org/docs.html
+For further details, refer to the Free Pascal User's Guide (Chapter 3 at the time of writing): https://www.freepascal.org/docs.html
 
 [[DoNothing]]
 === The bare minimum for a program
