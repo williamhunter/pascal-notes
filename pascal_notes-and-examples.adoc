@@ -186,6 +186,11 @@ begin
 end.
 ----
 
+== Programs and units
+A Pascal program can consist of modules called units. A unit can be used to group pieces of code together, or to give someone code
+without giving the sources. Both programs and units consist of code blocks, which are mixtures of statements, procedures, and
+variable or type declarations.
+
 === A minimal unit
 A unit contains a set of declarations, procedures and functions that can be used by a program or another unit.
 Below is an example of a minimal unit (filename +a.pas+ or +a.pp+):
@@ -460,12 +465,7 @@ The following files are typically not added to your VCS.
 | .rst| Compiled resource strings. Used for L10n. If you intend to translate an application, this should probably be version controlled
 |===
 
-== Programs and units
-A Pascal program can consist of modules called units. A unit can be used to group pieces of code together, or to give someone code
-without giving the sources. Both programs and units consist of code blocks, which are mixtures of statements, procedures, and
-variable or type declarations.
-
 == Settings (configuration)
-
+To be completed...
 
 // create PDF by running asciidoctor-pdf filename.adoc
