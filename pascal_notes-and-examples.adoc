@@ -335,6 +335,11 @@ I did another thing!
 I did something from another Unit!
 ----
 
+=== A program with a class defined in a unit
+To be completed...
+
+
+
 == Classes and objects
 A class is user-defined type, it describes the behaviour and characteristics of a group of
 similar objects by means of internal methods (functions and procedures) and other data
