@@ -1,7 +1,8 @@
-# Pascal Notes and Examples
+= Pascal Notes and Examples
 
-These are just my own notes and examples about Object Pascal
+These are my personal tips, notes and examples that deals with _Object Pascal_ (specifically Free Pascal and some Lazarus IDE).
 
-See the other Asciidoc file
+See the other Asciidoc file https://github.com/williamhunter/pascal_notes-and-examples/blob/master/pascal_notes-and-examples.adoc[here]
 
+[NOTE]
 This is a work in progress, I'm also learning Asciidoc as I go along...
