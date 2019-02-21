@@ -186,56 +186,6 @@ begin
 end.
 ----
 
-=== Case sensitivity
-Pascal code is not case sensitive. Whilst this does not make a difference on Windows
-platforms, you can potentially run into problems on Linux and Mac if you start mixing
-case, because the latter two are case sensitive (unlike Windows).
-
-==== Coding style and syntax
-. http://wiki.freepascal.org/Coding_style
-. http://jvcl.delphi-jedi.org/StyleGuide.htm
-. http://edn.embarcadero.com/article/10280
-
-=== File types
-As applicable to Free Pascal (FP) and the Lazarus IDE. It is a good idea to use lower
-case and no spaces in file names, for cross-platform compatibility.
-
-==== File extensions
-The following file types are usually required to be part of your VCS
-(Version Control System), depending on your development platform.
-
-[cols="15,85"]
-|=== 
-| *Extension* | *Description*
-|.pas | Pascal source code file
-|.pp | Pascal source code file (useful if you want to avoid confusion with Delphi source code files). You can set this in the IDE.
-|.lfm | Lazarus form source file. Analogous to Delphi's dfm files.
-|.lpi | Lazarus project information file. Created by Lazarus for every new project.
-|.lpr | Lazarus program (or project) file. The source code of the main program. Analogous to Delphi's dpr project file.
-|.rc | A Windows resource file (not binary)
-|.ico | The main project icon in Windows icon format
-|.manifest | Windows-specific manifest file for themes
-|=== 
-
-The following files are typically not added to your VCS.
-[cols="15,85"]
-|=== 
-| *Extension*| *Description*
-| .lps| Lazarus project settings file. Created by Lazarus for every new project.
-| .lrs| Lazarus resource file.
-| .compiled| FPC compilation state
-| .o| Object file
-| .or| Object file
-| .ppu| A compiled Unit file
-| .res| The result of compiling the rc file (binary)
-| .rst| Compiled resource strings. Used for L10n. If you intend to translate an application, this should probably be version controlled
-|===
-
-== Programs and units
-A Pascal program can consist of modules called units. A unit can be used to group pieces of code together, or to give someone code
-without giving the sources. Both programs and units consist of code blocks, which are mixtures of statements, procedures, and
-variable or type declarations.
-
 === A minimal unit
 A unit contains a set of declarations, procedures and functions that can be used by a program or another unit.
 Below is an example of a minimal unit (filename +a.pas+ or +a.pp+):
@@ -256,7 +206,7 @@ Below is an example of a unit with all possible sections (including optional one
 
 [source, pascal]
 ----
-unit minimal;  
+unit complete;  
  
 interface  
 
@@ -462,6 +412,58 @@ end.
 
 === An even more elaborate example
 Some text goes here
+
+== Syntax, code style and file types
+
+=== Case sensitivity
+Pascal code is not case sensitive. Whilst this does not make a difference on Windows
+platforms, you can potentially run into problems on Linux and Mac if you start mixing
+case, because the latter two are case sensitive (unlike Windows).
+
+==== Coding style and syntax
+. http://wiki.freepascal.org/Coding_style
+. http://jvcl.delphi-jedi.org/StyleGuide.htm
+. http://edn.embarcadero.com/article/10280
+
+=== File types
+As applicable to Free Pascal (FP) and the Lazarus IDE. It is a good idea to use lower
+case and no spaces in file names, for cross-platform compatibility.
+
+==== File extensions
+The following file types are usually required to be part of your VCS
+(Version Control System), depending on your development platform.
+
+[cols="15,85"]
+|=== 
+| *Extension* | *Description*
+|.pas | Pascal source code file
+|.pp | Pascal source code file (useful if you want to avoid confusion with Delphi source code files). You can set this in the IDE.
+|.lfm | Lazarus form source file. Analogous to Delphi's dfm files.
+|.lpi | Lazarus project information file. Created by Lazarus for every new project.
+|.lpr | Lazarus program (or project) file. The source code of the main program. Analogous to Delphi's dpr project file.
+|.rc | A Windows resource file (not binary)
+|.ico | The main project icon in Windows icon format
+|.manifest | Windows-specific manifest file for themes
+|=== 
+
+The following files are typically not added to your VCS.
+[cols="15,85"]
+|=== 
+| *Extension*| *Description*
+| .lps| Lazarus project settings file. Created by Lazarus for every new project.
+| .lrs| Lazarus resource file.
+| .compiled| FPC compilation state
+| .o| Object file
+| .or| Object file
+| .ppu| A compiled Unit file
+| .res| The result of compiling the rc file (binary)
+| .rst| Compiled resource strings. Used for L10n. If you intend to translate an application, this should probably be version controlled
+|===
+
+== Programs and units
+A Pascal program can consist of modules called units. A unit can be used to group pieces of code together, or to give someone code
+without giving the sources. Both programs and units consist of code blocks, which are mixtures of statements, procedures, and
+variable or type declarations.
 
 == Settings (configuration)
 
