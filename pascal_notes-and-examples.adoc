@@ -251,6 +251,58 @@ implementation
 end.
 ----
 
+=== A complete general unit
+Below is an example of a unit with all possible sections (including optional ones). From Marco Cantu's website.
+
+[source, pascal]
+----
+unit minimal;  
+ 
+interface  
+
+// other units we need to refer to
+uses
+  A, B, C;
+
+// exported type definition
+type
+  newType = TypeDefinition;
+
+// exported constants
+const
+  Zero = 0;
+
+// global variables
+var
+  Total: Integer;
+
+// list of exported functions and procedures
+procedure MyProc;
+
+implementation  
+
+uses
+  D, E;
+
+// hidden global variable
+var
+  PartialTotal: Integer;
+
+// all the exported functions must be coded
+procedure MyProc;
+begin
+  // ... code of procedure MyProc
+end;
+
+initialization
+  // optional initialization part
+
+finalization
+  // optional clean-up code
+
+end.
+----
+
 === A program with units
 A program that makes use of two units.
 
