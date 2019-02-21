@@ -1,4 +1,4 @@
-= Object Pascal: A Collection of Notes and Simple Examples 
+= Object Pascal: A Collection of Notes and Examples 
 :revnumber: 2019.03
 :revmark: First issue
 :author: William Hunter
@@ -335,11 +335,6 @@ I did another thing!
 I did something from another Unit!
 ----
 
-=== A program with a class defined in a unit
-To be completed...
-
-
-
 == Classes and objects
 A class is user-defined type, it describes the behaviour and characteristics of a group of
 similar objects by means of internal methods (functions and procedures) and other data
@@ -355,7 +350,7 @@ behaviour/data.
 
 === A simple example of a class
 Below is a simple definition of a class. Note that the implementation of the method
-(in this case, a procedure called Sum) is outside the class definition. The class
+(in this case, a procedure called Square) is outside the class definition. The class
 definition only includes the method prototypes (definitions), not the actual implementation.
 This is for easier readability of the class definition.
 
@@ -364,19 +359,58 @@ This is for easier readability of the class definition.
 type
   TCalculator = class
     number: Integer; // note that the "var" keyword is not required inside a class
-    procedure Sum;
+    procedure Square;
   end;
 
-procedure TCalculator.Sum;
+procedure TCalculator.Square;
 begin
-  Writeln(number + 10);
+  writeln(number * number);
 end;
 ----
 
 ==== How to use classes
-Add text here...
+Take the class example of above and use it in a small program.
 
-=== A more elaborate example
+[source, pascal]
+----
+program UseAClass;
+
+{$mode objfpc}{$H+}
+
+uses
+  SysUtils { you can add units after this };
+
+type
+  TCalculator = class
+    number: longint; // note that the "var" keyword is not required inside a class
+    function Square(val: longint): longint;
+  end;
+
+  function TCalculator.Square(val: longint): longint;
+  begin
+    Result := val * val;
+  end;
+
+var
+  Calc: TCalculator; // a new variable of type TCalculator
+  num: longint;
+
+begin
+  Calc.Create;
+  num := 9;
+  WriteLn('The square of ' + IntToStr(num) + ' = ' + IntToStr(Calc.Square(num)) +
+    ' <(Should = 81), press Enter to exit>');
+  Calc.Free;
+  ReadLn;
+end. 
+----
+
+
+
+=== A program with a class defined in a unit
+To be completed...
+
+=== A more complicated example
 A drawing object class...
 
 [source, pascal, numbered]
@@ -420,8 +454,8 @@ begin
 end.
 ----
 
-=== An even more elaborate example
-Some text goes here
+=== An even more complicated example
+To be completed...
 
 == Syntax, code style and file types
 
