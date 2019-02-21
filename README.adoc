@@ -1,8 +1,8 @@
 = Pascal Notes and Examples
 
-These are my personal tips, notes and examples that deals with _Object Pascal_ (specifically Free Pascal and some Lazarus IDE).
+These are my personal notes and examples that deals with _Object Pascal_ (specifically Free Pascal and some Lazarus IDE).
 
-See the other Asciidoc file https://github.com/williamhunter/pascal_notes-and-examples/blob/master/pascal_notes-and-examples.adoc[here]
+The document is https://github.com/williamhunter/pascal_notes-and-examples/blob/master/pascal_notes-and-examples.adoc[here]
 
-[NOTE]
-This is a work in progress, I'm also learning Asciidoc as I go along...
+[Note]
+This is a work in progress. I'm also learning Asciidoc as I go along...
