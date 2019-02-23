@@ -15,75 +15,6 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 
-== Asciidoc snippets (not part of this document)
-This document iss typeset using http://asciidoc.org[AsciiDoc].
-There are some snippets I may want to use later on this page, nothing to do with Object Pascal.
-
-A paragraph followed by a simple list with square bullets.
-
-.A bulleted list (square bullets)
-[square]
-* item
-* item 
-
-//-
-
-.Another list
-* item 
-* item 
-** item 
-** item
-- item
-- item
-
-.Start the below list numbered from 88
-[start=88]
-. Step four
-. Step five
-. Step six
-
-Hard drive:: Permanent storage for operating system and/or user files
-RAM:: Temporarily stores information the CPU uses during operation
-Monitor:: Displays information in visual form using text and graphics
-
-.Another list
-. something
-. something
-.. something
-... something
-. something
- 
-.Topic Title                                               
-[[yourId]]                                                 
-//[yourstyle]                                                
-____
-Example of a quote and using cross-references.
-____
-You refer to the above by referencing <<yourId>>.
-
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-
-[NOTE]
-====
-A sample note admonition.
-We can use gemoji icons in the Asciidoctor markup.
-We assign an icon name to the document
-attributes `tip-caption`, `note-caption` and `important-caption`.
-====
-
-CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
-
-TIP: It works!
-
-IMPORTANT: Asciidoctor is awesome, don't forget!
-
-WARNING: You have no reason not to use Asciidoctor.
 
 == Introduction
 This document focusses on the use of Free Pascal and therefore the Free Pascal Compiler (FPC) and its spinoffs (notably,
@@ -358,14 +289,14 @@ This is for easier readability of the class definition.
 ----
 type
   TCalculator = class
-    number: Integer; // note that the "var" keyword is not required inside a class
-    procedure Square;
+    number: longint; // note that the "var" keyword is not required inside a class
+    function Square(val: longint): longint;
   end;
 
-procedure TCalculator.Square;
-begin
-  writeln(number * number);
-end;
+  function TCalculator.Square(val: longint): longint;
+  begin
+    Result := val * val;
+  end;
 ----
 
 ==== How to use classes
@@ -399,7 +330,7 @@ begin
   Calc.Create;
   num := 9;
   WriteLn('The square of ' + IntToStr(num) + ' = ' + IntToStr(Calc.Square(num)) +
-    ' <(Should = 81), press Enter to exit>');
+    ' <Answer should = 81, press Enter to exit>');
   Calc.Free;
   ReadLn;
 end. 
@@ -508,3 +439,74 @@ The following files are typically not added to your VCS.
 To be completed...
 
 // create PDF by running asciidoctor-pdf filename.adoc
+
+
+== Asciidoc snippets (not part of this document)
+This document iss typeset using http://asciidoc.org[AsciiDoc].
+There are some snippets I may want to use later on this page, nothing to do with Object Pascal.
+
+A paragraph followed by a simple list with square bullets.
+
+.A bulleted list (square bullets)
+[square]
+* item
+* item 
+
+//-
+
+.Another list
+* item 
+* item 
+** item 
+** item
+- item
+- item
+
+.Start the below list numbered from 88
+[start=88]
+. Step four
+. Step five
+. Step six
+
+Hard drive:: Permanent storage for operating system and/or user files
+RAM:: Temporarily stores information the CPU uses during operation
+Monitor:: Displays information in visual form using text and graphics
+
+.Another list
+. something
+. something
+.. something
+... something
+. something
+ 
+.Topic Title                                               
+[[yourId]]                                                 
+//[yourstyle]                                                
+____
+Example of a quote and using cross-references.
+____
+You refer to the above by referencing <<yourId>>.
+
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[NOTE]
+====
+A sample note admonition.
+We can use gemoji icons in the Asciidoctor markup.
+We assign an icon name to the document
+attributes `tip-caption`, `note-caption` and `important-caption`.
+====
+
+CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
+
+TIP: It works!
+
+IMPORTANT: Asciidoctor is awesome, don't forget!
+
+WARNING: You have no reason not to use Asciidoctor.
