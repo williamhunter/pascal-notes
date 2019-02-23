@@ -71,7 +71,7 @@ end.
 ----
 
 If you compile the above, you'll end up with the following two files in the same direcory
-(in addition to the +minimal.pp+ (or +minimal.pas+)) on a Windows machine:
+(in addition to the +minimal.pp+ (or +minimal.pas+) file) on a Windows machine:
 [source, console]
 ----
 minimal.exe
@@ -407,9 +407,10 @@ case, because the latter two are case sensitive (unlike Windows).
 . http://wiki.freepascal.org/Coding_style
 . http://jvcl.delphi-jedi.org/StyleGuide.htm
 . http://edn.embarcadero.com/article/10280
+. Huw Collingbourne has a different take on this (TODO: add from his "Little book")
 
 === File types
-As applicable to Free Pascal (FP) and the Lazarus IDE. It is a good idea to use lower
+As applicable to Free Pascal and the Lazarus IDE. It is a good idea to use lower
 case and no spaces in file names, for cross-platform compatibility.
 
 ==== File extensions
@@ -443,11 +444,36 @@ The following files are typically not added to your VCS.
 | .rst| Compiled resource strings. Used for L10n. If you intend to translate an application, this should probably be version controlled
 |===
 
-== Settings (configuration)
-To be completed...
+== Lazarus IDE tips and tricks
+=== Code completion (autocompletion)
+There is a whole section about intelligent code completion ((like Visual Studio's
+IntelliSense) here:
+http://wiki.freepascal.org/Lazarus_IDE_Tools#Code_Completion[Code Completion]
+
+Identifier Completion:: CTRL+Space 
+Code Completion:: SHIFT+CTRL+C (Place your cursor on the line with the procedure declaration in the
+interface part and press SHIFT+CTRL+C, it will invoke autocompletion and create
+an empty procedure/function in the implementation section of the unit.)
+Word completion:: CTRL+W
+Formatting code:: CTRL+D (Uses JEDI code formatter)
+
+=== Synchro Edit
+Edit multiple words simultaneously by selecting a block of code, pressing CRTL+J, select
+word you want to change by pressing TAB, make the change and press ESC.
 
 // create PDF by running asciidoctor-pdf filename.adoc
 
+== Random stubs
+Things of value I'd like to expand on...
+
+=== Arrays
+From Stackoverflow: Delphi Pascal also has a nice feature that helps iterating through an array of
+any dimension:
+
+Simply use for i:= Low(Array) to High(Array) do.... which is completely transparent
+to starting offset i.e. 0,1 or 5 or whatever.
+
+https://stackoverflow.com/questions/12871142/how-can-i-declare-an-array-property
 
 == Asciidoc snippets (not part of this document)
 This document iss typeset using http://asciidoc.org[AsciiDoc].
