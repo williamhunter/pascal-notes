@@ -70,6 +70,14 @@ begin
 end.
 ----
 
+If you compile the above, you'll end up with the following two files in the same direcory
+(in addition to the +minimal.pp+ (or +minimal.pas+)) on a Windows machine:
+[source, console]
+----
+minimal.exe
+minimal.o
+----
+
 === Hello, World!
 Some code that does something (see <<lnk-minimal>> for the bare minimum that is required for a valid pascal program).
 Here's how you say "`Hello, World!`" in Object Pascal:
