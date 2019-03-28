@@ -15,7 +15,7 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 // Source directory
-:sourcedir: ./source
+:sourcedir: source
 
 
 == Introduction
