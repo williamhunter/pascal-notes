@@ -15,7 +15,7 @@
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
 // Source directory
-//:sourcedir: source
+:sourcedir: ../source
 
 
 == Introduction
@@ -74,7 +74,7 @@ end.
 
 [source, pascal]
 ----
-include::../source/minimal.pp[]
+include::{sourcedir}/minimal.pp[]
 ----
 
 If you compile the above, you'll end up with the following two files in the same direcory
