@@ -14,6 +14,8 @@
 :listing-caption: Listing
 // Uncomment next line to set page size (default is A4)
 //:pdf-page-size: Letter
+// Source directory
+:sourcedir: ./source
 
 
 == Introduction
@@ -68,6 +70,11 @@ begin
   // this is a comment
   // filename is minimal.pas or minimal.pp  
 end.
+----
+
+[source, pascal]
+----
+include::{sourcedir}/minimal.pp[]
 ----
 
 If you compile the above, you'll end up with the following two files in the same direcory
