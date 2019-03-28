@@ -1,4 +1,4 @@
-= Pascal Notes and Examples
+= Pascal Notes
 
 These are my personal notes and examples that deals with _Object Pascal_ (specifically Free Pascal and some Lazarus IDE).
 
