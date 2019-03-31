@@ -1,4 +1,3 @@
-
 program minimal;
 
 begin
