@@ -2,7 +2,7 @@
 
 These are my personal notes and examples that deals with _Object Pascal_ (specifically Free Pascal and some Lazarus IDE).
 
-The document is https://github.com/williamhunter/pascal_notes-and-examples/blob/master/pascal_notes-and-examples.adoc[here]
+The document is https://github.com/williamhunter/pascal_notes-and-examples/blob/master/pascal-notes.adoc[here]
 
 [Note]
 This is a work in progress. I'm also learning Asciidoc as I go along...
